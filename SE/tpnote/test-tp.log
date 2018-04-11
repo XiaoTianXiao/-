@@ -1,0 +1,18 @@
++ annoncer 'Répertoire vide'
++ COURANT='Répertoire vide'
++ creer_fichiers 0 /tmp/tp-dir.55218
++ local n=0
++ local dir=/tmp/tp-dir.55218
++ local i j
++ rm -rf /tmp/tp-dir.55218
++ mkdir -p /tmp/tp-dir.55218
++ i=1
++ '[' 1 -le 0 ']'
++ ./a.out /tmp/tp-dir.55218
+./test.sh: line 76: ./a.out: No such file or directory
++ fail
++ echo '==> Échec du test '\''Répertoire vide'\'''
++ echo '==> Log :'
++ cat test-tp.log
++ echo '==> Exit'
++ exit 1
